@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivals GeoGuesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rivals GeoGuesser</h1>
+    <form id="leaderboard" method="post">
+        <p id="finalScore"> Your Score: 0</p>
+        <p>
+            Add your score to the Leaderboard? <br>
+            
+            <strong>Name: </strong><input type="text" name="name"><br>
+        </p>
+        <input type="submit" value="Submit"/>
+        <input id="sendScore" type="text" name="score" value="0" style="visibility: hidden"><br>
+    </form>
+
+    <%- leaderBoard %>
+
+    <div class="mainButtons">
+        <a href="/"><button type="button">HOME</button></a>
+    </div>
+
+    <script src="rivals.js"></script>
+</body>
+</html>

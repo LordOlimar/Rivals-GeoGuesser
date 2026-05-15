@@ -1,0 +1,103 @@
+
+body {
+    padding: 1rem;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    background-color: darkseagreen;
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+h1 {
+    width: 75%;
+    font-size: 75px;
+    text-align: center;
+    margin: 2rem;
+}
+
+h2 {
+    width: 75%;
+    text-align: center;
+    margin: 0.75rem;
+}
+
+p {
+    width: 75%;
+    font-size: 22px;
+    text-align: center;
+    margin: 0.25rem;
+}
+
+.mainButtons {
+    width: 90%;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mainButtons button {
+    width: 10rem;
+    height: 3rem;
+    margin: 0rem 2rem;
+    border: 1px solid black;
+}
+
+.play {
+    display: grid;
+    place-items: center;
+    bottom: 2%;
+    top: 20%;
+}
+
+.play p {
+    margin: 0.5rem;
+}
+
+#clue {
+    width: 40%;
+    min-width: 500px;
+    height: auto;
+    margin: 1rem;
+    border: 20px outset black;
+}
+
+#map {
+    width: 40%;
+    min-width: 500px;
+    height: auto;
+    margin: 1rem;
+    border: 20px outset black;
+}
+
+.score {
+    display: grid;
+    place-items: center;
+    width: 60%;
+}
+
+#leaderboard {
+    display: grid;
+    place-items: center;
+    width: 80%;
+}
+
+table {
+    border-collapse: separate;
+    border: 0.25rem  solid black;
+    background-color: black;
+    
+}
+
+th {
+    border-collapse: separate;
+    border: 0.1rem  solid black;
+    background-color: darkseagreen;
+}
+
+td {
+    border-collapse: separate;
+    border: 0.1rem  solid black;
+    background-color: darkseagreen;
+}

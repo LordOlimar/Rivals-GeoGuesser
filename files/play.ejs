@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivals GeoGuesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Rivals GeoGuesser</h1>
+
+    <div class="play">
+        <h2 id="round">Round 100</h2>
+        <img id="clue" src="<%- cluesrc %>" alt="Clue Image not Loading">
+        <p>Find where the above picture was taken on the map below!</p>
+        <p id="cords">x: 0.000 | y: 0.000</p>
+        <img id="map" src="<%- mapsrc %>" alt="Map Image not Loading">
+    </div>
+    
+    <div style="visibility: hidden" class="score" id="scoreboard">
+        <p id="cCords">Correct cords: x: <%- x %> | y: <%- y %></p>
+        <p id="score">You scored: </p>
+        <button type="button" onclick="next()">Next Round</button>
+    </div>
+
+    <script src="rivals.js"></script>
+</body>
+</html>
