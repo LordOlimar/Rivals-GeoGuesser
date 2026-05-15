@@ -33,11 +33,6 @@ app.set("views", path.resolve(__dirname, "files"));
 const router = express.Router();
 app.use(router);
 
-app.listen(portNumber, function (err) {
-    if (err) console.log(err);
-    console.log(`Running at http://localhost:${portNumber}`);
-});
-
 router.get('/', async (req, res, next) => {
     res.render('index.ejs');
 });
