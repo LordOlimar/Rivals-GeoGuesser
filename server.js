@@ -4,9 +4,9 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const strict = require("assert/strict");
 const app = express();
-// require("dotenv").config({
-//    path: path.resolve(__dirname, "credentials/.env"),
-// });
+require("dotenv").config({
+   path: path.resolve(__dirname, "credentialsDontPost/.env"),
+});
 const { MongoClient, ServerApiVersion } = require("mongodb");
 const mongoose = require("mongoose");
 const portNumber = 5000;
@@ -33,10 +33,10 @@ app.set("views", path.resolve(__dirname, "files"));
 const router = express.Router();
 app.use(router);
 
-// app.listen(portNumber, function (err) {
-//     if (err) console.log(err);
-//     console.log(`Running at http://localhost:${portNumber}`);
-// });
+app.listen(portNumber, function (err) {
+    if (err) console.log(err);
+    console.log(`Running at http://localhost:${portNumber}`);
+});
 
 router.get('/', async (req, res, next) => {
     res.render('index.ejs');
